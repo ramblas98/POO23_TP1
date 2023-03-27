@@ -35,7 +35,27 @@ public class TP1_EJ12 {
         acum=acum+d;
       }
       System.out.println(acum);  
-    }  
+    }
+    public static void modulo3(){
+        Scanner teclado=new Scanner(System.in);
+      int num=teclado.nextInt();
+      int dig1,dig2,acum,inv;
+      inv=0;
+      while(num!=0){
+        dig1=num%10;
+        if(dig1==9) dig1=0;
+        else dig1++;
+        num=num/10;
+        inv=inv*10+dig1;
+      }
+      acum=0;
+      while(inv!=0){
+        dig2=inv%10;
+        inv=inv/10;
+        acum=acum*10+dig2;
+      }
+      System.out.println(acum);
+    }
       
 
     /**
@@ -49,6 +69,7 @@ public class TP1_EJ12 {
          System.out.println("MENU: ");
          System.out.println("1:Ingresar una cadena y ordenarla alfabaeticamente");
          System.out.println("2: Suma de los digistos de un numero");
+         System.out.println("3: Incrementa los digitos de un numero +1");
         }
       
     
