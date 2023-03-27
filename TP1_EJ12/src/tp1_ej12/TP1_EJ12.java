@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package tp1_ej12;
+import java.util.Scanner;
 
 /**
  *
@@ -16,7 +17,19 @@ public class TP1_EJ12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hola");
+       System.out.println("Ejercicio 2");
+       Scanner teclado= new Scanner (System.in);
+      
+       int num = teclado.nextInt();
+       int acu =0, d ;
+       
+       while (num != 0){
+         d = num % 10;
+         num = num / 10;
+         acu = acu + d;
+       }
+       
+       System.out.println( acu );
     }
     
 }
