@@ -100,11 +100,44 @@ public class TP1_EJ12 {
       if (sum<100) System.out.println("true");
       else System.out.println("false");
     }
+    public static void modulo8(){
+     Scanner teclado=new Scanner(System.in);
+      int posA,posP;
+      String correo,usuario,auxu,compania,auxc;
       
+      correo = teclado.next();
+      posA = correo.indexOf("@");
+      posP = correo.indexOf(".com");
+      
+       if(posA>0){
+         auxu = correo.substring(0,posA);
+         usuario = new String(auxu.substring(0,1).toUpperCase());
+         usuario = usuario.concat(auxu.substring(1,auxu.length()));
+         
+         auxc = correo.substring(posA+1,posP);
+         compania = new String(auxc.substring(0,1).toUpperCase());
+         compania = compania.concat(auxc.substring(1,auxc.length()));
+         System.out.println("Hi "+ usuario + ", Welcome to " + compania);
+    }}
+    public static void modulo9(){
+    public static int factorial(int n){
+    if(n==0) return 1;
+    else return n*factorial(n-1);
+  }
+    public static void main(String[] args) {
+     Scanner teclado=new Scanner(System.in);
+     int n=teclado.nextInt();
+     System.out.println(factorial(n));
+    }
+       
+      
+       
+       
 
     /**
      * @param args the command line arguments
      */
+        
     public static void main(String[] args) {
         // TODO code application logic here
         int op=99;
@@ -118,6 +151,8 @@ public class TP1_EJ12 {
          System.out.println("5: Calcula el perimetro de un traingulo");
          System.out.println("6: Convierte anios en cantidad de dias");
          System.out.println("7: Indicar si dos numeros sumados son menores que 100");
+         System.out.println("8: Muestra nombre y compania de un email");
+         System.out.println("10: Factorial de un numero ingresado");
          
          switch(op){
              case 1: modulo1; break;
@@ -127,6 +162,8 @@ public class TP1_EJ12 {
              case 5: modulo5; break;
              case 6: modulo6; break;
              case 7: modulo7; break;
+             case 8: modulo8; break;
+             case 10: modulo10; break;
          }
              
          }
