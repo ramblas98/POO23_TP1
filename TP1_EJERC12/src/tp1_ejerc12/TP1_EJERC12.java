@@ -15,7 +15,15 @@ public class TP1_EJERC12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("primera modificacion....");
+        System.out.println("MENU");
+        
+        
+        
+        
+        
+        
+        // ejerc 1
+        
     }
     
 }
