@@ -119,17 +119,6 @@ public class TP1_EJ12 {
          compania = compania.concat(auxc.substring(1,auxc.length()));
          System.out.println("Hi "+ usuario + ", Welcome to " + compania);
     }}
-    public static void modulo9(){
-    public static int factorial(int n){
-    if(n==0) return 1;
-    else return n*factorial(n-1);
-  }
-    public static void main(String[] args) {
-     Scanner teclado=new Scanner(System.in);
-     int n=teclado.nextInt();
-     System.out.println(factorial(n));
-    }
-       
       
        
        
