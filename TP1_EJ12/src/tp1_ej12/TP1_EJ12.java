@@ -70,6 +70,13 @@ public class TP1_EJ12 {
          System.out.println("1:Ingresar una cadena y ordenarla alfabaeticamente");
          System.out.println("2: Suma de los digistos de un numero");
          System.out.println("3: Incrementa los digitos de un numero +1");
+         switch(op){
+             case 1: modulo1; break;
+             case 2: modulo2; break;
+             case 3: modulo3; break;
+         }
+             
+         }
         }
       
     
