@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp1_ej12;
-
+import java.util.*;
 /**
  *
  * @author Cossio Carina
@@ -56,7 +56,7 @@ public class TP1_EJ12 {
       }
       System.out.println(acum);
     }
-    public static modulo4(){
+    public static void modulo4(){
         Scanner teclado = new Scanner(System.in);
         int v[];
         int par=0,impar=0,n,i;
@@ -75,6 +75,14 @@ public class TP1_EJ12 {
         System.out.println(par);
         System.out.println(impar);
     }
+    public static void modulo5(){
+        Scanner teclado=new Scanner(System.in);
+      int l=teclado.nextInt();
+      int w=teclado.nextInt();
+      int peri;
+      peri=2*(l+w);
+      System.out.println(peri);
+    }
       
 
     /**
@@ -90,12 +98,15 @@ public class TP1_EJ12 {
          System.out.println("2: Suma de los digistos de un numero");
          System.out.println("3: Incrementa los digitos de un numero +1");
          System.out.println("4: Sumar pares e impares de un vector");
+         System.out.println("5: Calcula el perimetro de un traingulo");
+         
          
          switch(op){
              case 1: modulo1; break;
              case 2: modulo2; break;
              case 3: modulo3; break;
              case 4: modulo4; break;
+             case 5: modulo5; break;
          }
              
          }
