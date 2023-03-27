@@ -91,6 +91,15 @@ public class TP1_EJ12 {
       
       System.out.println(edad);
     }
+    public static void modulo7(){
+    Scanner teclado=new Scanner(System.in);
+      int num1=teclado.nextInt();
+      int num2=teclado.nextInt();
+      int sum;
+      sum=num1+num2;
+      if (sum<100) System.out.println("true");
+      else System.out.println("false");
+    }
       
 
     /**
@@ -108,6 +117,7 @@ public class TP1_EJ12 {
          System.out.println("4: Sumar pares e impares de un vector");
          System.out.println("5: Calcula el perimetro de un traingulo");
          System.out.println("6: Convierte anios en cantidad de dias");
+         System.out.println("7: Indicar si dos numeros sumados son menores que 100");
          
          switch(op){
              case 1: modulo1; break;
@@ -116,6 +126,7 @@ public class TP1_EJ12 {
              case 4: modulo4; break;
              case 5: modulo5; break;
              case 6: modulo6; break;
+             case 7: modulo7; break;
          }
              
          }
