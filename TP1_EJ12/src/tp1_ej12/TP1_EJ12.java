@@ -83,6 +83,14 @@ public class TP1_EJ12 {
       peri=2*(l+w);
       System.out.println(peri);
     }
+    public static void modulo6(){
+        Scanner teclado=new Scanner(System.in);
+      int edad=teclado.nextInt();
+      
+        edad=edad*365;
+      
+      System.out.println(edad);
+    }
       
 
     /**
@@ -99,7 +107,7 @@ public class TP1_EJ12 {
          System.out.println("3: Incrementa los digitos de un numero +1");
          System.out.println("4: Sumar pares e impares de un vector");
          System.out.println("5: Calcula el perimetro de un traingulo");
-         
+         System.out.println("6: Convierte anios en cantidad de dias");
          
          switch(op){
              case 1: modulo1; break;
@@ -107,6 +115,7 @@ public class TP1_EJ12 {
              case 3: modulo3; break;
              case 4: modulo4; break;
              case 5: modulo5; break;
+             case 6: modulo6; break;
          }
              
          }
