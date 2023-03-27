@@ -56,6 +56,25 @@ public class TP1_EJ12 {
       }
       System.out.println(acum);
     }
+    public static modulo4(){
+        Scanner teclado = new Scanner(System.in);
+        int v[];
+        int par=0,impar=0,n,i;
+        n=teclado.nextInt();
+        v=new int[n];
+        for (i=0; i<n; i++) {
+            v[i] = teclado.nextInt();
+        }
+        for (i=0; i<n; i++) {
+            if (v[i]%2==0) {
+                par+=v[i];
+            } else {
+                impar+=v[i];
+            }
+        }
+        System.out.println(par);
+        System.out.println(impar);
+    }
       
 
     /**
@@ -70,10 +89,13 @@ public class TP1_EJ12 {
          System.out.println("1:Ingresar una cadena y ordenarla alfabaeticamente");
          System.out.println("2: Suma de los digistos de un numero");
          System.out.println("3: Incrementa los digitos de un numero +1");
+         System.out.println("4: Sumar pares e impares de un vector");
+         
          switch(op){
              case 1: modulo1; break;
              case 2: modulo2; break;
              case 3: modulo3; break;
+             case 4: modulo4; break;
          }
              
          }
