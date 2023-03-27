@@ -16,6 +16,7 @@ public class TP1_EJ10 {
     public static void main(String[] args) {
         // TODO code application logi
         System.out.println("primera rama");
+        System.out.println("Hola");
     }
     
 }
