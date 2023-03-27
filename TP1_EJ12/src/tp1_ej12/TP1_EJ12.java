@@ -129,7 +129,7 @@ public class TP1_EJ12 {
      */
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
-        int op=90;
+        int op=90,b;
        while(op!=0){
            System.out.println("2:Suma de digitos");
            System.out.println("4:Suma de los Impares Y Pares de un vector");
@@ -143,27 +143,38 @@ public class TP1_EJ12 {
            System.out.println("13:Convertir minutos en segundos");
            System.out.println("14:Calcular el area de un triangulo");
            System.out.println("15:Verificar si un numero es palindromo");
-           if(op==2) modulo2();
-           else if(op==4) modulo4();
-           else if(op==5) modulo5();
-           else if(op==6) modulo6();
-           else if(op==7) modulo7();
-           else if(op==8) modulo8();
-           else if(op==9){
-               System.out.println("Introduzca el numero a sacar");
-               int b=teclado.nextInt();
-               modulo9(b);
-           }
-           else if(op==10){
-               System.out.println("Ingrese el numero a sacar factorial: ");
-               int b=teclado.nextInt();
-               modulo10(b);
-           }
-           else if(op==11) modulo11();
-           else if(op==13) modulo13();
-           else if(op==14) modulo14();
-           else if(op==15) modulo15();
            op=teclado.nextInt();
+           switch(op){
+               case 2:modulo2();
+                      break;
+               case 4:modulo4();
+                      break;
+               case 5:modulo5();
+                      break;
+               case 6:modulo6();
+                      break;
+               case 7:modulo7();
+                      break;
+               case 8:modulo8();
+                      break;
+               case 9:System.out.println("Ingrese hasta donde la sucesion: ");
+                      b=teclado.nextInt();
+                      modulo9(b);
+                      break;
+               case 10:System.out.println("Ingese el numero a sacar factorial: ");
+                       b=teclado.nextInt();
+                       modulo10(b);
+                       break;
+               case 11: modulo11();
+                        break;
+               case 13: modulo13();
+                        break;
+               case 14:modulo14();
+                       break;
+               case 15:modulo15();
+                       break;
+                
+           }
     }
     
 }
