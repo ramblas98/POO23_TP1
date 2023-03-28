@@ -133,6 +133,14 @@ public class TP1_EJ12 {
       int num=teclado.nextInt();
       num=num*60;
       System.out.println(num);}
+    public static void modulo14(){
+    
+    Scanner teclado=new Scanner(System.in);
+      int altura=teclado.nextInt();
+      int base=teclado.nextInt();
+      int result;
+      result=(base*altura)/2;
+      System.out.println(result);}
     
     
    
@@ -161,6 +169,7 @@ public class TP1_EJ12 {
          System.out.println("10: Factorial de un numero ingresado");
          System.out.println("Remover el primer y ultimo caracter");
          System.out.println("Convertir minutos en segundos");
+         System.out.println("Calcular el area de un triangulo");
        
          
          switch(op){
@@ -174,7 +183,7 @@ public class TP1_EJ12 {
              case 8: modulo8(); break;
              case 11: modulo11(); break;
              case 13: modulo13(); break;
-            
+             case 14: modulo14(); break;
          }
              
          }
