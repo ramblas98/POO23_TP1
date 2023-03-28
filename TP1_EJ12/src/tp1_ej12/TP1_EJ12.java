@@ -154,6 +154,7 @@ public class TP1_EJ12 {
         
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner teclado=new Scanner(System.in);
         int op=99;
         
         while(op!=0){
@@ -170,6 +171,7 @@ public class TP1_EJ12 {
          System.out.println("Remover el primer y ultimo caracter");
          System.out.println("Convertir minutos en segundos");
          System.out.println("Calcular el area de un triangulo");
+         op=teclado.nextInt();
        
          
          switch(op){
