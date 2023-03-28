@@ -12,10 +12,10 @@ import java.util.*;
 public class TP1_EJ12 {
     
     public static void modulo1(){
-      Scanner teclado = new Scanner(System.in);
+              Scanner teclado = new Scanner(System.in);
     
       int size = teclado.nextInt();
-      size++;
+      teclado.nextLine();
       int i;
       
       String[] array = new String[size];
@@ -142,11 +142,23 @@ public class TP1_EJ12 {
     }
     
     public static void modulo9(){
-        
+     int n1=0,n2=1,n3,i,count=10;    
+    System.out.print(n1+" "+n2);//printing 0 and 1    
+    
+    for(i=2;i<count;++i) {    
+    n3=n1+n2;    
+    System.out.print(" "+n3);    
+    n1=n2;    
+    n2=n3;  }   
     }
     
     public static void modulo10(){
-  
+    int i,fact=1;  
+    int number=5;//It is the number to calculate factorial    
+    for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
     }
     
     public static void modulo11(){
@@ -159,7 +171,27 @@ public class TP1_EJ12 {
     }
     
     public static void modulo12(){
-        
+      Scanner teclado = new Scanner(System.in);
+      String mensaje;
+      String caracter;
+      String caracter2;
+      int contador;
+      
+      mensaje = teclado.next();
+      
+      for(int i = 0; i < mensaje.length(); i++){
+        contador = 0;
+        caracter = mensaje.substring(i,i+1);
+        for(int j = 0; j < mensaje.length(); j++){
+          caracter2 = mensaje.substring(j,j+1);
+          if(caracter.equals(caracter2) == true){
+            contador++;
+        }
+      }
+      if(contador > 1){
+        System.out.print(caracter+":"+contador+", ");
+        }
+    }
     }
     
     public static void modulo13(){
@@ -204,7 +236,67 @@ public class TP1_EJ12 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        
+        
+        Scanner teclado = new Scanner(System.in);
+        int N;
+        
+    
+        
+        do{
+            System.out.println("Selecciona un programa:\n0_Exit\n1_Sort names in an alphabetical Order\n2_Print the sum of the digits of a given number\n3_Increment the digits of a number by 1\n4_Print the sum of odd and even numbers present in an array\n5_Calculate perimeter of a Rectangle\n6_Convert age into number of days\n7_Check if sum of two numbers is less than 100?\n8_Print Hi UserName, Welcome to companyName from email-id\n9_Print fibonacci series\n10_Factorial of a given number\n11_Remove first and last character from a string\n12_Count the repetitive characters present in a string\n13_Convert Minutes into Seconds\n14_Calculate area of a triangle\n15_Check if a given number is palindrome or not");
+            N = teclado.nextInt();
+            
+            switch(N){
+                case 1:
+                    modulo1();
+                    break;
+                case 2:
+                    modulo2();
+                    break;
+                case 3:
+                    modulo3();
+                    break;
+                case 4:
+                    modulo4();
+                    break;
+                case 5:
+                    modulo5();
+                    break;
+                case 6:
+                    modulo6();
+                    break;
+                case 7:
+                    modulo7();
+                    break;
+                case 8:
+                    modulo8();
+                    break;
+                case 9:
+                    modulo9();
+                    break;
+                case 10:
+                    modulo10();
+                    break;
+                case 11:
+                    modulo11();
+                    break;
+                case 12:
+                    modulo12();
+                    break;
+                case 13:
+                    modulo13();
+                    break;
+                case 14:
+                    modulo14();
+                    break;
+                case 15:
+                    modulo15();  
+                    break;
+                default:
+                    return;
+            }
+        } while(N != 0);
     }
     
 }
