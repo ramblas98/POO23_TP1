@@ -171,21 +171,21 @@ public class TP1_EJ12 {
         do{
             System.out.println("MENU\n");
             System.out.println("0: Salir\n");
-            System.out.println("1: Ordenar nombres en orden alfabético\n");
-            System.out.println("2: Imprimir la suma de los dígitos de un número dado\n");
-            System.out.println("3: Incrementar los dígitos de un número en 1\n");
-            System.out.println("4: Imprimir la suma de números pares e impares presentes en una Array\n");
-            System.out.println("5: Calcular perímetro de un Rectángulo\n");
-            System.out.println("6: Convertir la edad en número de días\n");
-            System.out.println("7: Comprobar si la suma de dos números es menor que 100\n");
+            System.out.println("1: Ordenar nombres en orden alfabetico\n");
+            System.out.println("2: Imprimir la suma de los digitos de un numero dado\n");
+            System.out.println("3: Incrementar los digitos de un numero en 1\n");
+            System.out.println("4: Imprimir la suma de numeros pares e impares presentes en una Array\n");
+            System.out.println("5: Calcular perimetro de un Rectangulo\n");
+            System.out.println("6: Convertir la edad en numero de dias\n");
+            System.out.println("7: Comprobar si la suma de dos numeros es menor que 100\n");
             System.out.println("8: Imprimir Hola nombre de usuario, bienvenido a companyName de email-id\n");
             System.out.println("9: Imprimir serie fibonacci\n");
-            System.out.println("10: Factorial de un número dado\n");
-            System.out.println("11: Eliminar el primer y último carácter de una cadena\n");
+            System.out.println("10: Factorial de un numero dado\n");
+            System.out.println("11: Eliminar el primer y ultimo caracter de una cadena\n");
             System.out.println("12: Cuente los caracteres repetitivos presentes en una cadena\n");
             System.out.println("13: Convertir Minutos en Segundos\n");
             System.out.println("14: calcular el area de un triangulo\n");
-            System.out.println("15: Comprobar si un número dado es palíndromo o no\n");
+            System.out.println("15: Comprobar si un numero dado es palindromo o no\n");
             System.out.println("Seleccione una opcion:");
             n=teclado.nextInt();
             switch(n){
