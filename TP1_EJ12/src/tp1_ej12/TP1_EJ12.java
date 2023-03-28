@@ -142,10 +142,21 @@ public class TP1_EJ12 {
       result=(base*altura)/2;
       System.out.println(result);}
     
-    
-   
-    
-       
+    public static void modulo15(){
+    Scanner teclado=new Scanner(System.in);
+      int num=teclado.nextInt();
+      int aux=num;
+      int inv=0;
+      
+      while(num!=0){
+        int dig=num%10;
+        inv=inv*10+dig;
+        num=num/10;
+      }
+      if(aux==inv){
+        System.out.println("TRUE");
+      }
+      else System.out.println("FALSE");}
        
 
     /**
@@ -171,9 +182,10 @@ public class TP1_EJ12 {
          System.out.println("Remover el primer y ultimo caracter");
          System.out.println("Convertir minutos en segundos");
          System.out.println("Calcular el area de un triangulo");
+         System.out.println("Verificar si un numero es palindromo");
+         
          op=teclado.nextInt();
        
-         
          switch(op){
              case 1: modulo1(); break;
              case 2: modulo2(); break;
@@ -186,6 +198,7 @@ public class TP1_EJ12 {
              case 11: modulo11(); break;
              case 13: modulo13(); break;
              case 14: modulo14(); break;
+             case 15: modulo15(); break;
          }
              
          }
