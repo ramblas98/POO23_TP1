@@ -31,7 +31,7 @@ public class TP1_EJ14 {
         
           }
         }
-        //B)_
+        //D)_
         System.out.println("Ingrese posicion del caracter a leer:");
         System.out.println("Fila:");
         int posf = teclado.nextInt();
@@ -42,6 +42,7 @@ public class TP1_EJ14 {
             System.out.println(matriz[posf][posc]);
         }
         else System.out.println("Posicion no encontrada");
+        
     }
     
 }
