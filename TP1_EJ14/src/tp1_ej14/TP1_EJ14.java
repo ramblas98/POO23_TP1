@@ -22,7 +22,7 @@ public class TP1_EJ14 {
         System.out.println("Ingrese la cantidad de columnas");
         int c = teclado.nextInt();
         char[][] matriz=new char[f][c];
-        
+        //a)_
         for(int i=0 ; i<f ; i++){
         for(int j=0; j<c ; j++){
             int aleatorioInt = rand.nextInt(90-65+1) + 65;
@@ -31,6 +31,17 @@ public class TP1_EJ14 {
         
           }
         }
+        //B)_
+        System.out.println("Ingrese posicion del caracter a leer:");
+        System.out.println("Fila:");
+        int posf = teclado.nextInt();
+        System.out.println("Columna: ");
+        int posc = teclado.nextInt();
+        
+        if (posf>=0 && posf<f && posc>=0 && posc<c){
+            System.out.println(matriz[posf][posc]);
+        }
+        else System.out.println("Posicion no encontrada");
     }
     
 }
