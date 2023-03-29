@@ -9,6 +9,10 @@ package tp1_ej12;
  * @author profeblas
  */
 public class TP1_EJ12 {
+    
+    public static void modulo1(){
+        
+    }
 
     /**
      * @param args the command line arguments
@@ -16,6 +20,7 @@ public class TP1_EJ12 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Primera modificacion...");
+        
     }
     
 }
