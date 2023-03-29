@@ -124,6 +124,90 @@ public class TP1_EJ12 {
       if(sum==b) System.out.println("TRUE");
       else System.out.println("FALSE");
     }
+    public static void modulo16(){
+      Scanner teclado=new Scanner(System.in);
+      String cad;
+      cad=teclado.next();
+      System.out.println(cad.length());
+    }
+    public static void modulo17(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1,cad2;
+      cad=teclado.next();
+      cad1=teclado.next();
+      cad2=new String(cad.concat(" "+cad1));
+      System.out.println(cad2);
+    }
+    public static void modulo18(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      cad1=teclado.next();
+      if(cad.compareTo(cad1)==0) System.out.println("true");
+      else System.out.println("false");
+    }
+    public static void modulo19(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      cad1=new String(cad.substring(0,1));
+      System.out.println(cad1);
+    }
+    public static void modulo20(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      cad1=new String(cad.substring(cad.length()-1,cad.length()));
+      System.out.println(cad1);
+    }
+    public static void modulo21(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      cad1=new String(cad.substring(0,1));
+      cad1=cad1.concat(cad.substring(cad.length()-1,cad.length()));
+      System.out.println(cad1);
+    }
+    public static void modulo23(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      int i,count=0;
+      for(i=0;i<cad.length();i++){
+        char c=cad.charAt(i);
+        if(Character.isUpperCase(c)==true) count=count+1;
+      }
+      if(count==cad.length()) System.out.println("true");
+      else System.out.println("false");
+    }
+    public static void modulo24(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      int i,count=0;
+      for(i=0;i<cad.length();i++){
+        char c=cad.charAt(i);
+        if(Character.isUpperCase(c)==false) count=count+1;
+      }
+      if(count==cad.length()) System.out.println("true");
+      else System.out.println("false");
+    }
+    public static void modulo25(){
+      Scanner teclado=new Scanner(System.in);
+      String cad,cad1;
+      cad=teclado.next();
+      cad1=teclado.next();
+      if(cad.length()==cad1.length()) System.out.println("true");
+      else System.out.println("false");
+    }
+    public static void modulo26(){
+      Scanner teclado=new Scanner(System.in);
+      String cad=teclado.next();
+      String cad2;
+      StringBuilder cad1=new StringBuilder(cad);
+      cad2=cad1.reverse().toString();
+      System.out.println(cad2);
+    }
     /**
      * @param args the command line arguments
      */
@@ -143,6 +227,17 @@ public class TP1_EJ12 {
            System.out.println("13:Convertir minutos en segundos");
            System.out.println("14:Calcular el area de un triangulo");
            System.out.println("15:Verificar si un numero es palindromo");
+           System.out.println("-----Apartir de aqui empieza el one compiler de String---------");
+           System.out.println("16:Imprimir la longitud de una cadena");
+           System.out.println("17:Concatenar 2 palabra");
+           System.out.println("18:Comparar 2 cadena");
+           System.out.println("19:Muestra el primer caracter de una palabra");
+           System.out.println("20:Muestra el ultimo caracter de una palabra");
+           System.out.println("21:Muestra el primer y ultimo caracter de una palabra");
+           System.out.println("23:Verdadero si esta en mayucula");
+           System.out.println("24:Verdadero si esta en minucula");
+           System.out.println("25:Verdadero si la longitud de 2 cadenas son iguales");
+           System.out.println("26:Devuelve una cadena de caracter invertida");
            op=teclado.nextInt();
            switch(op){
                case 2:modulo2();
@@ -173,7 +268,26 @@ public class TP1_EJ12 {
                        break;
                case 15:modulo15();
                        break;
-                
+               case 16:modulo16();
+                       break;
+               case 17:modulo17();
+                       break;
+               case 18:modulo18();
+                       break;
+               case 19:modulo19();
+                       break;
+               case 20:modulo20();
+                       break;
+               case 21:modulo21();
+                       break;
+               case 23:modulo23();
+                       break;
+               case 24:modulo24();
+                       break;
+               case 25:modulo25();
+                       break;
+               case 26:modulo26();
+                       break;
            }
     }
     
