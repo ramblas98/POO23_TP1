@@ -10,6 +10,20 @@ import java.util.*;
  */
 public class TP1_EJ14 {
 
+    public static boolean BuscarNO(String palabra, int f, int c){
+        int i=0;
+        boolean bandera = true; 
+        int tamanio = palabra.length();
+        
+        while ( bandera != false && i < tamanio){
+            if ( palabra.charAt(i)!= matriz [f-i][c-i]){
+                bandera = false;
+            }
+            i++;
+        }
+        return bandera;
+        
+    }
     /**
      * @param args the command line arguments
      */
@@ -39,6 +53,7 @@ public class TP1_EJ14 {
         int posc = teclado.nextInt();
         
         if (posf>=0 && posf<f && posc>=0 && posc<c){
+            System.out.println("Posicion encontrada: ");
             System.out.println(matriz[posf][posc]);
         }
         else System.out.println("Posicion no encontrada");
